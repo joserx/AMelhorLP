@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faça sua Reserva!</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="etapa_1">
+          <h1>Olá sangue laranja!</h1>
+          <p>Com a Pandemia da Covid-19, muita coisa mudou. O trabalho remoto não foi uma opção, mas sim necessário e assim se foram quase 2 anos de home office. Porém, hoje com a vacinação em andamento, já podemos enxergar novas possibilidades, e aqui na FCamara não é diferente, com muito cuidado e segurança estamos planejando a reabertura da nossa empresa. Estamos muito felizes com essa novidade, mas sabemos que não será como antes então por isso lembrem-se:</p>
+          <img src="./assets/03 (1).png" class = "sint" alt="">
+         
+      </div>
+      <div class="etapa_2">
+          <h1>Protocolo de segurança!</h1>
+          <div class="etapa_2_conteudo">
+              <img class="etapa_2_imagem" src="./assets/02.png" alt="icone_time">
+              <p>Primeiramente estamos voltando a funcionar somente com 40% da capacidade dos nossos escritorios seguindo a legislação e respeitando o distanciamento social, pessoas que estiverem sentindo algum sintoma não devem ir trabalhar presencialmente a indicação é para que permaneçam em casa. A volta ao trabalho presencial é opcional então se você se sente trabalhando confortavel em casa não tem problema se optar por continuar no Home Office.</p>
+          </div>
+      </div>
+      <div class="etapa_3">
+          <h1>Pensando em ir ao escritório?</h1>
+          <div class="etapa_3_conteudo">
+              <p>Caso seja essa sua vontade meu querido Sangue Laranja não se preocupe, os escritorios voltarão a ficar abertos no horário das 8h as 18h tanto nosso escritorio localizado em São Paulo como o de Santos. Então se sentir a vontade e estiver dentro dos protocolos de segurança agende sua ida agora mesmo, lembrando que será medida a temperatura de todos os colaboradores.</p>
+              <img class="etapa_3_imagem" src="./assets/03.jpg" alt="icone_time">
+          </div>
+      </div>
+  </div>
+    <div class="botaoz">
+      <button id="botao" onclick="abrirModal()">
+        <strong>Marque uma ida</strong>
+      </button>
+    </div>
+
+    </div>
+    
+    <div class="modal" id="modal">
+      <div class="centro">
+        <div class="titulo">
+          <h1> Faça sua Reserva!</h1>
+        </div>
+        <form action="" class="form" id="form">
+          <div>
+            <label for="nome">Nome</label>
+            <div>
+              <input
+              type="nome"
+              name="nome"
+              id="nome"
+              placeholder="Insira seu nome"
+              required
+              />
+            </div>
+          </div>
+          <div class="label-email">
+            <label for="email">E-mail</label>
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Insira seu e-mail"
+                required
+              />
+            </div>
+          </div>
+          <div class="label-escritorio">
+            <label for="escritorio">Selecione o seu Escritorio</label>
+            <div>
+              <div>
+                <select name="escritorio" id="btescrit"></select>
+              </div>
+            </div>
+          </div>
+          <div class="label-data">
+            <label for="data"> Selecione o dia</label>
+            <div>
+              <input type="date" id="data" name="data" />
+            </div>
+            </div>
+            <div class="label-mesas">
+              <label for="mesas">Selecione sua mesa</label>
+              <div>
+                <select name="mesas" id="mesas"></select>
+              </div>
+            </div>
+            <div>
+              <input type="submit" onclick="fecharModal()" id="sub" value="Reservar" class="botao"/>
+            </div>
+      </div>
+    </div>
+    <div class="overlay" id="overlay">
+
+    </div>
+    
+  </body>
+  <script src="./index.js">
+    
+  </script>
+</html>
