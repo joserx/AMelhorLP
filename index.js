@@ -37,7 +37,7 @@ async function reservar() {
     body,
   };
 
-  const request = new Request("http://localhost:3000", options);
+  const request = new Request("http://lpjoseh.herokuapp.com", options);
   const resposta = await fetch(request);
   const dados = await resposta.json();
   if (dados.status == 200) {
@@ -45,7 +45,7 @@ async function reservar() {
   }
 }
 async function localizarFilial() {
-  const request = new Request("http://localhost:3000/filial");
+  const request = new Request("http://lpjoseh.herokuapp.com/filial");
   const resposta = await fetch(request);
   const dados = await resposta.json();
   escritorio(dados);
@@ -59,7 +59,7 @@ async function escritorio(data) {
   });
 }
 async function localizarMesa() {
-  const request = new Request("http://localhost:3000/mesa");
+  const request = new Request("http://lpjoseh.herokuapp.com/mesa");
   const resposta = await fetch(request);
   const dados = await resposta.json();
   mesa(dados);
